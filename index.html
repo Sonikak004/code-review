@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Project name:</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- 
+    <div>
+      <h3>Hello World, we are software developers!</h3>
+    </div>  -->
+  <header class="main-header" id="header">
+    <div class="container text-center">
+      <h1 id="title" class="title">
+        Our Website Survey Form
+      </h1>
+      <p id="description"> Want to share your point of view?
+        <br> Take a moment to fill the survery below
+      </p>
+    </div>
+  </header>
+  <div>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Enter your name"> </input>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input id="email" name="email" type="email" required placeholder="Enter your email"> </input>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age:</label>
+        <input id="number" name="number" min="18" max = "120" type="number" required placeholder="35"> </input>
+      </div>
+      <div class="form-group">
+        <label for="select">Dropdown</label>
+        <select name="age" id="dropdown"> 
+          <option value="opt1">Option 1</option>
+          <option value="opt2">Option 2</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Gender</label>
+        <br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+      </div>
+      <div class="form-group">
+        <label>Checkboxes</label> <br>
+        <label>
+          <input name="check-opt" value="check1" type="checkbox">Check 1</input>
+        </label>
+        <label>
+          <input name="check-opt" value="check2" type="checkbox">Check 2</input>
+        </label>
+        <label>
+          <input name="check-opt" value="check3" type="checkbox">Check 3</input>
+        </label>
+      </div>
+      <div class="form-group">
+        <p><label for="comments">Additional Comments:</label></p>
+        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+      </div>
+      <div class="form-group">
+        <button id="submit" class="submit-btn" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+    <script  src="js/index.js"></script>
+  </body>
+</html>
